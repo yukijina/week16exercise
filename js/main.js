@@ -55,7 +55,7 @@ const contact = {
   `
 }
 
-const myRouter = new VueRouter({
+const router = new VueRouter({
   routes: [
     {
       path: '/home',
@@ -76,11 +76,11 @@ const myRouter = new VueRouter({
     {
       path: '/contact',
       component: contact
-    },
+    }
   ]
 })
 
-var goRouter = new Vue ({
+var routerTest = new Vue({
   router,
   el: '#app',
   data: {
@@ -88,5 +88,5 @@ var goRouter = new Vue ({
   },
   methods: {
 
-  }
-}).$mount('#app')
+  },
+}).$mount('#app')  // need this when you use router
